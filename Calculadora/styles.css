@@ -3,7 +3,7 @@ body{ /* corpo da página */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: navy;
+  background-image:radial-gradient(blue,navy);
   height: 100vh;
 }
 
