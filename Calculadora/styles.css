@@ -1,0 +1,163 @@
+body{ /* corpo da página */
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  height: 100vh;
+}
+
+.calculator{ /* calculadora */
+    background-color: black;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#display{ /* visor que mostra o que está sendo clicado e, consequentemente, o resultado do cálculo */
+    width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+    border: none;
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.buttons1{ /* como os botões no exemplo em que escolhi tinham cores diferentes, maneira que encontrei foi separá-los em diversas class, para juntá-los de acordo com tamanho, cor e formato */
+    display: grid; /* botões ficam em "tabela */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+button{
+    border: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 4px;
+    gap: 10px;
+}
+
+button:hover{ /* quando o mouse passa por cima do botão, a "mãozinha abre"*/
+    cursor: pointer;
+}
+
+.btn-clean{
+    background-color: #616161;
+    width: 62px;
+    height: 62px;
+    left: 34px;
+    top: 386px;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #a5a5a5;
+}
+
+.btn-oper{
+    background-color: #005DB2;
+    width: 62px;
+    height: 62px;
+    left: 198px;
+    top: 386px;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #24a5ff;
+}
+
+.btn-oper2{
+    background-color: #005DB2;
+    width: 62px;
+    height: 60px;
+    left: 280px;
+    top: 470px;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #24A5FF;
+}
+
+.btn-oper3{
+    background-color: #005DB2;
+    width: 62px;
+    height: 60px;
+    left: 280px;
+    top: 552px;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #339DFF;
+}
+
+.btn-number{
+    background-color: #303136;
+    width: 62px;
+    height: 60px;
+    left: 116px;
+    top: 546px;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #298AFF;
+}
+
+.btn-zero{
+    background-color: #303136;
+    width: 144px;
+    height: 60px;
+    left: 34px;
+    top: 712px;
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #24A5FF;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+
+.btn-result{
+    background-color: #1991ff;
+    width: 62px;
+    height: 136px;
+    left: 280px;
+    top: 674px;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: whitesmoke;
+    grid-column: 4;
+    grid-row: 4 / 6; 
+}
